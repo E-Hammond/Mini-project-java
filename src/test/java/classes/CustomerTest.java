@@ -10,14 +10,14 @@ public class CustomerTest {
 
     @Before
     public void setUp() throws Exception {
-        customer = new Customer("Thomas", 900.00 );
+        customer = new Customer("Emma", 900.00 );
     }
 
 
     @Test
     public void getName() {
-        assertEquals("Thomas", customer.getName());
-        assertNotEquals("Sydney", customer.getName());
+        assertEquals("Emma", customer.getName());
+        assertNotEquals("Koo", customer.getName());
     }
 
 
