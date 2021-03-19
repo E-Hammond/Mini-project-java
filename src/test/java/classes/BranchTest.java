@@ -11,7 +11,7 @@ public class BranchTest {
     @Before
     public void setUp() throws Exception {
         branch = new Branch("Kumasi");
-        branch.newCustomer("Holla", 400.00);
+        branch.newCustomer("Halla", 400.00);
     }
 
     @Test
@@ -23,7 +23,7 @@ public class BranchTest {
 
     @Test
     public void getCustomers() {
-        assertEquals("Holla", branch.getCustomers().get(0).getName());
+        assertEquals("Halla", branch.getCustomers().get(0).getName());
         assertNotEquals("Robert", branch.getCustomers().get(0));
     }
 
@@ -35,7 +35,7 @@ public class BranchTest {
 
     @Test
     public void addCustomerTransaction() {
-        assertTrue(branch.addCustomerTransaction("Holla",400.00));
+        assertTrue(branch.addCustomerTransaction("Halla",400.00));
         assertFalse(branch.addCustomerTransaction("Simon",700.00));
     }
 }

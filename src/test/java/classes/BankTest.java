@@ -19,7 +19,7 @@ private Bank bank;
 
     @Test
     public void addBranch() {
-        assertTrue(bank.addBranch("Cape coast"));
+        assertTrue(bank.addBranch("CapeCoast"));
         assertFalse(bank.addBranch("Accra"));
     }
 
@@ -38,6 +38,6 @@ private Bank bank;
     @Test
     public void listCustomers() {
         assertTrue(bank.listCustomers("Accra", true));
-        assertFalse(bank.listCustomers("Cape Coast", false ));
+        assertFalse(bank.listCustomers("CapeCoast", false ));
     }
 }
